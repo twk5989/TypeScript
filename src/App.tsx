@@ -2,23 +2,25 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+let data = {
+  name: '누나네 식당',
+  category: 'western',
+  address:{
+    city:'incheon',
+    detail:'somewhere',
+    zipCode:23456
+  },
+
+  //array로 만들고 객체로
+  menu:[{name:"tomato pasta", price:2000, category:"PASTA"}, {name:"garlic steak", price:3000, category:"PASTA"} ]
+
+}
+//타입을 지정해줘야함. React.Fc
+const App:React.FC = ()=> {
+  return(
+    <div className='App'>
+
     </div>
   );
 }
