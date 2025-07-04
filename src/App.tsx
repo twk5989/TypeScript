@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react'; 
 import logo from './logo.svg';
 import './App.css';
 import Store from './Store';
+import { Restaurant } from './model/resturant';
 
 
-let data = {
+let data: Restaurant= {
   name: '누나네 식당',
   category: 'western',
   address:{
@@ -19,9 +20,10 @@ let data = {
 }
 //타입을 지정해줘야함. React.Fc
 const App:React.FC = ()=> {
+  const [myRestaurant, setMyRestaurant] = useState<Restaurant>(data) //<>제네릭 문법
   return(
     <div className='App'>
-      <Store/>
+      <Store info={myRestaurant}/>
     </div>
   );
 }
