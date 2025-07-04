@@ -10,7 +10,7 @@ export type Restaurant = {
 
 export type Address = {
     city:string;
-    dstail:string;
+    detail:string;
     zipCode:number;
 }
 
