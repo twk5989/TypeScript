@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Store from './Store';
 
 
 let data = {
@@ -20,7 +21,7 @@ let data = {
 const App:React.FC = ()=> {
   return(
     <div className='App'>
-
+      <Store/>
     </div>
   );
 }
