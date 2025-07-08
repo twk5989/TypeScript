@@ -18,4 +18,4 @@ export type Menu = {
     name:string;
     price:number;
     category:string;
-}
+} //메뉴 타입에 다른 함수를 더 붙이고 싶다. 이럴때에 사용하는게 extends
