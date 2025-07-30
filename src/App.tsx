@@ -25,7 +25,9 @@ let data: Restaurant= {                     //type = Restaurant
 const App:React.FC = ()=> {
   const [myRestaurant, setMyRestaurant] = useState<Restaurant>(data) //<>제네릭 문법
 
-  const changeAddress = (address:Address)=> {
+
+  const changeAddress = (address:Address)=> {    //지금까지는 정적인 데이터들만 보냈고 이번에는 함수를 보내보기 위해서 함수 정의
+    
     setMyRestaurant({...myRestaurant,address:address})
     return true;
   }
@@ -38,3 +40,5 @@ const App:React.FC = ()=> {
 }
 
 export default App;
+
+//React.lazy() + <Suspense> 내장함수에 대하여 공부해라
