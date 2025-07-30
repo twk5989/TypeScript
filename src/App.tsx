@@ -6,7 +6,7 @@ import { Address, Restaurant } from './model/restaurant';
 import BestMenu from './model/BestMenu';
 
 
-let data: Restaurant= {
+let data: Restaurant= {                     //type = Restaurant
   name: 'Just restaurant',
   category: 'western',
   address:{
@@ -18,7 +18,9 @@ let data: Restaurant= {
   //array로 만들고 객체로
   menu:[{name:"tomato pasta", price:2000, category:"PASTA"}, {name:"garlic steak", price:3000, category:"PASTA"} ]
 
-}
+} //여기까지 적어둔 data의 정보들을 model폴더안의 restaurant.ts안에 각각의 타입을 지정해준다
+
+
 //타입을 지정해줘야함. React.Fc
 const App:React.FC = ()=> {
   const [myRestaurant, setMyRestaurant] = useState<Restaurant>(data) //<>제네릭 문법

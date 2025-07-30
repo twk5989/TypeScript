@@ -1,4 +1,4 @@
-//model 안에는 내가 만든 type을 넣는다
+//model 안에는 내가 만든 data(App.tsx에 정의된) type을 넣는다
 //그리고 지금 restaurant라는 type을 만들었지만 restaurant속 address도 type으로 만들수 있다(type속의 type)
 
 export type Restaurant = {
@@ -19,3 +19,26 @@ export type Menu = {
     price:number;
     category:string;
 } //메뉴 타입에 다른 함수를 더 붙이고 싶다. 이럴때에 사용하는게 extends
+
+
+
+// interface 방식
+
+// export interface Restaurant {
+//     name: string;
+//     category: string;
+//     address: Address;
+//     menu: Menu[];
+// }
+
+// export interface Address {
+//     city: string;
+//     detail: string;
+//     zipCode: number;
+// }
+
+// export interface Menu {
+//     name: string;
+//     price: number;
+//     category: string;
+// }
