@@ -7,7 +7,7 @@ import BestMenu from './model/BestMenu';
 
 
 let data: Restaurant= {
-  name: '누나네 식당',
+  name: 'Just restaurant',
   category: 'western',
   address:{
     city:'incheon',
